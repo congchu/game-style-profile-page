@@ -1,19 +1,55 @@
+import { url } from "inspector";
+import { getStaticAsset } from "../utils/getStatic";
+
 export default function Video() {
   return (
     <div className="relative">
-      <img
+      <div
+        className="video-container"
+        style={{ borderRadius: "32px", maxWidth: "640px", maxHeight: "320px" }}
+      >
+        <video
+          width="100%"
+          height="auto"
+          autoPlay
+          loop
+          muted
+          controls
+          style={{
+            margin: 0,
+            padding: 0,
+            borderRadius: "32px",
+            maxWidth: "640px",
+            maxHeight: "320px",
+          }}
+        >
+          <source
+            src={getStaticAsset("videos/vlog-movie.mp4")}
+            type="video/mp4"
+          />
+          대체 텍스트
+        </video>
+      </div>
+
+      {/* <img
         src="https://assets.codepen.io/3685267/react-streaming-dashboard-video.jpg"
         alt=""
-        style={{ borderRadius: "32px" }}
-      />
+      /> */}
       <div className="absolute  -left-4 -bottom-4">
         <div className="relative">
           <div className="ping-outer" />
-          <img
-            src="https://assets.codepen.io/3685267/react-streaming-dashboard-player.jpg"
-            alt=""
-            className="player rounded-3xl"
+          <div
+            style={{
+              backgroundImage: `url(
+                ${getStaticAsset("images/profile-2.jpg")})`,
+              backgroundSize: "cover",
+              backgroundPosition: "top",
+              width: "200px",
+              height: "130px",
+              borderRadius: "12px",
+            }}
           />
+
           <svg
             className="absolute inset-0"
             viewBox="0 0 276 146"

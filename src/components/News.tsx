@@ -1,4 +1,4 @@
-import { newsList } from "../contents/content";
+import { newsList } from "../properties/content";
 
 export default function News() {
   return (

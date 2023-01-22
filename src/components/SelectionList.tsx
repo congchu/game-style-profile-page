@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import { useState } from "react";
-import { topSelectionCategories } from "../contents/content";
-import { topSelectIcons } from "../contents/icons";
+import { topSelectionCategories } from "../properties/content";
+import { topSelectIcons } from "../properties/icons";
 
 export default function SelectionList() {
   const [active, setActive] = useState(0);

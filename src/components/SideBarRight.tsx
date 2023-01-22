@@ -1,4 +1,5 @@
-import { sidebarRightIcons } from "../contents/content";
+import { sidebarRightIcons } from "../properties/content";
+import { getStaticAsset } from "../utils/getStatic";
 
 export default function SidebarRight() {
   return (
@@ -14,13 +15,14 @@ export default function SidebarRight() {
           />
         </div>
       </div>
-      {sidebarRightIcons.map(({ background, icon }, index) => (
+      {sidebarRightIcons.map(({ background, icon, link }, index) => (
         <div
-          className="w-11 h-11 rounded-xl mt-4 flex justify-center items-center fadeInDown"
+          onClick={() => window.open(link)}
+          className="w-11 h-11 rounded-xl mt-4 flex justify-center items-center fadeInDown cursor-pointer"
           style={{ background, animationDelay: `${0.1 * index}s` }}
         >
           <img
-            src={`https://assets.codepen.io/3685267/${icon}`}
+            src={getStaticAsset(`icons/${icon}`)}
             alt=""
             className="w-5 h-5"
           />
@@ -32,7 +34,7 @@ export default function SidebarRight() {
         style={{ animationDelay: "0.4s" }}
       >
         <img
-          src="https://assets.codepen.io/3685267/react-streaming-dashboard-selection-item-avatar-2.jpg"
+          src={getStaticAsset("icons/ic-kakao.png")}
           alt=""
           className=" rounded-full"
         />
@@ -57,7 +59,7 @@ export default function SidebarRight() {
         style={{ animationDelay: "0.5s" }}
       >
         <img
-          src="https://assets.codepen.io/3685267/react-streaming-dashboard-selection-item-avatar-4.jpg"
+          src={getStaticAsset("icons/ic-gmail.png")}
           alt=""
           className=" rounded-full"
         />

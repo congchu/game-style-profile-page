@@ -1,13 +1,16 @@
+import { getStaticAsset } from "../utils/getStatic";
+
 export default function Header() {
   return (
     <div className="h-24 flex items-center justify-between pr-8">
       <div className="pl-4 py-5 h-full flex">
         <img
-          src="https://assets.codepen.io/3685267/react-streaming-dashboard-logo.jpg"
+          src={getStaticAsset("images/logo.png")}
           alt="logo"
+          style={{ width: "220px", height: "50px" }}
         />
       </div>
-      <div className="relative mini-icon">
+      {/* <div className="relative mini-icon">
         <form action="#">
           <input
             type="email"
@@ -27,7 +30,7 @@ export default function Header() {
             clipRule="evenodd"
           />
         </svg>
-      </div>
+      </div> */}
       <div className="mini-icon inline-flex items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
