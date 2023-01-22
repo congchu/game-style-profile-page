@@ -1,5 +1,4 @@
 # 게임 스타일 프로필 웹
 
-참고 링크
-
+### 디자인 템플릿
 - https://codepen.io/dilums/pen/oNYQrgw
