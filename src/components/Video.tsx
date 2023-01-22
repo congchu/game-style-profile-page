@@ -1,4 +1,3 @@
-import { url } from "inspector";
 import { getStaticAsset } from "../utils/getStatic";
 
 export default function Video() {
