@@ -15,9 +15,9 @@ export default function SidebarRight() {
           />
         </div>
       </div>
-      {sidebarRightIcons.map(({ background, icon, link }, index) => (
+      {sidebarRightIcons.map(({ background, icon, url }, index) => (
         <div
-          onClick={() => window.open(link)}
+          onClick={() => window.open(url)}
           className="w-11 h-11 rounded-xl mt-4 flex justify-center items-center fadeInDown cursor-pointer"
           style={{ background, animationDelay: `${0.1 * index}s` }}
         >

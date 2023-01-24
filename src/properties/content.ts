@@ -2,19 +2,25 @@ import { CategoryType, SelectionItemProps } from "../types/types";
 
 export const sidebarRightIcons = [
   {
-    background: "#de4f5f",
+    background: "#ffffff24",
     icon: "github-mark-white.svg",
-    link: "https://github.com/congchu",
+    url: "https://github.com/congchu",
   },
   {
-    background: "#6348b1",
+    background: "#4e54c0",
     icon: "notion-white.svg",
-    link: "https://www.notion.so/cucus/FullStack-d5ecae2649a3484e9b236d79cd7d7fe4",
+    url: "https://www.notion.so/cucus/FullStack-d5ecae2649a3484e9b236d79cd7d7fe4",
   },
   {
-    background: "#4a8cda",
+    background: "#12b886",
     icon: "velog-white.svg",
-    link: "https://velog.io/@cookie004",
+    url: "https://velog.io/@cookie004",
+  },
+  {
+    background:
+      "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)",
+    icon: "icons8-instagram.svg",
+    url: "https://www.instagram.com/jeongkoo.dev",
   },
 ];
 
@@ -178,7 +184,6 @@ export const topSelectionItemList: SelectionItemListType = {
       title: "기술, 커리어 강의 & 멘토링 (20.03~)",
       subTitle: "주니어 개발자 대상 강의 및 멘토링 ",
       image: "study-thumbnail-4.jpg",
-
       tags: [
         { text: "강의", color: "#4770da" },
         { text: "멘토링", color: "rgb(235, 128, 82)" },
