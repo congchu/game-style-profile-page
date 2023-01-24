@@ -35,7 +35,12 @@ export default function SelectionList({
           >
             {topSelectIcons[index]}
           </svg>
-          <div className="font-medium uppercase text-sm ml-4 flex color-base">
+          <div
+            className={clsx(
+              "font-medium uppercase text-sm ml-4 flex color-base",
+              active === category.key && "top-selection-active"
+            )}
+          >
             {category.label}
           </div>
         </div>

@@ -6,11 +6,14 @@ import SelectionListItem from "./SelectionListItem";
 
 export default function TopSelection() {
   const [activeSelection, setActiveSelection] = useState(
-    topSelectionItemList.project
+    topSelectionItemList.companyProject
   );
 
   const setActiveSelectionValue = (value: CategoryValueType) => {
-    setActiveSelection(topSelectionItemList[value]);
+    setActiveSelection([]);
+    setTimeout(() => {
+      setActiveSelection(topSelectionItemList[value]);
+    }, 10);
   };
   return (
     <div className="mt-8">
@@ -23,7 +26,7 @@ export default function TopSelection() {
       </div>
       <div className="flex mt-8">
         <SelectionList setActiveSelectionValue={setActiveSelectionValue} />
-        <div className="ml-24 space-x-8 flex">
+        <div className="ml-24 space-x-8 flex flex-1">
           {activeSelection.map((item) => (
             <SelectionListItem key={item.key} item={item} />
           ))}
