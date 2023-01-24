@@ -30,8 +30,9 @@ export default function SidebarRight() {
       ))}
 
       <div
-        className="w-10 h-10 mt-10 overflow-hidden relative fadeInDown"
+        className="w-10 h-10 mt-10 overflow-hidden relative fadeInDown cursor-pointer"
         style={{ animationDelay: "0.4s" }}
+        onClick={() => window.open("https://open.kakao.com/o/s8n5FaSd")}
       >
         <img
           src={getStaticAsset("icons/ic-kakao.png")}
@@ -55,8 +56,9 @@ export default function SidebarRight() {
         </svg>
       </div>
       <div
-        className="w-10 h-10 mt-4 overflow-hidden relative fadeInDown"
+        className="w-10 h-10 mt-4 overflow-hidden relative fadeInDown cursor-pointer"
         style={{ animationDelay: "0.5s" }}
+        onClick={() => window.open("mailto:cookie00421@gmail.com")}
       >
         <img
           src={getStaticAsset("icons/ic-gmail.png")}
