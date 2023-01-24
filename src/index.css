@@ -15,6 +15,10 @@ body {
   color: #595284;
 }
 
+.color-base-lite {
+  color: #7770a8;
+}
+
 .dashboard {
   background: #2b2549;
   width: 1280px;
@@ -57,6 +61,9 @@ body {
 
 .tag-red-dot {
   background: #ff96a2;
+}
+.tag-yellow-dot {
+  background: #d99a51;
 }
 
 .top-selection-active {

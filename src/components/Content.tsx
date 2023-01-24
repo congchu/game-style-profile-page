@@ -11,9 +11,9 @@ export default function Content() {
       <div className="flex flex-grow">
         <SidebarLeft />
         <div className="flex flex-col h-full pb-8 pr-8">
-          <div className="flex items-start">
+          <div className="flex items-start gap-6">
             <Video />
-            <div className="flex-grow" />
+            {/* <div className="flex-grow" /> */}
             <News />
           </div>
           <TopSelection />

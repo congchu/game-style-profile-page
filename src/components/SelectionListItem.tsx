@@ -27,14 +27,14 @@ export default function SelectionListItem({
         />
       </div>
       <div className="flex mt-3">
-        <div
+        {/* <div
           style={{
             backgroundImage: `url(${getStaticAsset(`images/${avatar}`)})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
           className="w-10 h-10  rounded-full"
-        />
+        /> */}
         <div className="ml-2">
           <div className="text-white text-sm ">{title}</div>
           <div className="mt-1 text-sm text-gray-400">{subTitle}</div>

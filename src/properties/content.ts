@@ -21,20 +21,23 @@ export const sidebarRightIcons = [
 export const newsList = [
   {
     key: 0,
-    title: "기술 블로그를 운영 중",
-    subTitle: "Available via desktop app, mobile apps, set-top",
-    image: "react-streaming-dashboard-news-item-1.jpg",
+    title: "세상을 이롭게 만드는 서비스에 관심이 많습니다",
+    subTitle:
+      "개발 지식을 통해 세상에 기여하고, 사회를 이롭게 만드는데 관심이 많습니다",
+    tags: [{ text: "번역", color: "#d94b87" }],
+  },
+  {
+    key: 0,
+    title: "지식을 공유하며 함께 성장하는 삶을 지향합니다",
+    subTitle: "여러 스터디 그룹 및 커뮤니티 소속으로 기여하고 있습니다",
+
     tags: [{ text: "번역", color: "#d94b87" }],
   },
   {
     key: 1,
-    title: "블록체인 회사 다니는 중",
-    subTitle: "Dungeons & Dragons On...",
-    image: "react-streaming-dashboard-news-item-2.jpg",
-    tags: [
-      { text: "game", color: "#6647bf" },
-      { text: "multi", color: "#4696b9" },
-    ],
+    title: "스타트업 환경에 맞는 빠른 주기 개발에 익숙합니다",
+    subTitle:
+      "4년 간의 스타트업 경험으로 빠른 주기 개발과 애자일 방법론을 익혔습니다",
   },
 ];
 
